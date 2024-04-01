@@ -9,6 +9,7 @@
 
 body {
     color: #ededed;
+    background: #1e1e1e;
 }
 
 .header {
@@ -149,6 +150,27 @@ body {
 
 .profile:hover {
     box-shadow: 0 0 5px #ededed, 0 0 15px #ededed, 0 0 20px #ededed;
+}
+
+.about {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.about h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #ededed;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about p {
+    color: #ededed;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
 }
 
 @keyframes slideRight {
