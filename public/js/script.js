@@ -12,12 +12,12 @@ function reveal() {
                 reveals[i].classList.add('slideTop-50px');
             }
             else if(i==1) {
-                reveals[i].classList.add('slideLeft');
+                reveals[i].classList.add('slideTop-50px');
             }
         }
         else {
             reveals[i].classList.remove('slideTop-50px');
-            reveals[i].classList.remove('slideLeft');
+            reveals[i].classList.remove('slideTop-50px');
         }
     }
 }
