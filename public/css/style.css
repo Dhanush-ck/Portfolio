@@ -18,7 +18,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 20px 10%;
     background: transparent;
     display: flex;
@@ -93,7 +93,7 @@ body {
     font-size: 56px;
     font-weight: 700;
     letter-spacing: -8px;
-    margin: 15px 0;
+    margin: 15px 0 0 0;
     /* animation: slideRight 1s ease forwards;
     animation-delay: calc(.7s * var(--i)); */
 }
@@ -164,7 +164,8 @@ body {
 }
 
 .about {
-    margin: 20px;   
+    margin: 0 0 20px 0;   
+    width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -202,6 +203,65 @@ body {
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+}
+
+.skill {
+    margin: 120px 30px 30px 70px;
+    width: 100vw;
+}
+
+.skill h1 {
+    margin: 30px;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.skill-content {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 350px);   
+    gap: 130px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 18px;
+}
+
+.c {
+    /* height: 400px; */
+    width: 100%;
+    box-shadow: 0 0 15px rgba(240, 240, 240, 0.6);
+    border-radius: 50px;
+    padding: 50px 50px 20px 50px;
+}
+
+.c img {
+    height: 200px;
+}
+
+.cpp {
+    /* height: 400px; */
+    width: 100%;
+    box-shadow: 0 0 15px rgba(240, 240, 240, 0.6);
+    border-radius: 50px;
+    padding: 50px 50px 20px 50px;
+}
+
+.cpp img {
+    height: 180px;
+    margin: 0 0 30px 0;
+}
+
+.html {
+    /* height: 400px; */
+    width: 100%;
+    box-shadow: 0 0 15px rgba(240, 240, 240, 0.6);
+    border-radius: 50px;
+    padding: 50px 50px 20px 50px;
+}
+
+.html img {
+    height: 200px;
 }
 
 .slideLeft {
