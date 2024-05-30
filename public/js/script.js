@@ -14,10 +14,18 @@ function reveal() {
             else if(i==1) {
                 reveals[i].classList.add('slideTop-50px');
             }
+            else if (i==2) {
+                reveals[i].classList.add('slideLeft-50px');
+            }
+            else if (i <=6) {
+                reveals[i].classList.add('skillContent');
+            }
         }
         else {
             reveals[i].classList.remove('slideTop-50px');
-            reveals[i].classList.remove('slideTop-50px');
+            reveals[i].classList.remove('slideLeft-50px');
+            reveals[i].classList.remove('slideTop');
+            reveals[i].classList.remove('skillContent');
         }
     }
 }
