@@ -165,6 +165,7 @@ body {
 
 .about {
     margin: 0 0 20px 0;   
+    padding: 100px 0 0 0 ;
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -206,7 +207,7 @@ body {
 }
 
 .skill {
-    margin: 120px 30px 30px 70px;
+    margin: 120px 0px 30px 70px;
     width: 100vw;
 }
 
@@ -215,6 +216,7 @@ body {
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 1.5px;
+    opacity: 0;
 }
 
 .skill-content {
@@ -227,24 +229,23 @@ body {
     font-size: 18px;
 }
 
-.c {
-    /* height: 400px; */
+.skill-content > * {
     width: 100%;
+    /* height: 650px; */
     box-shadow: 0 0 15px rgba(240, 240, 240, 0.6);
     border-radius: 50px;
     padding: 50px 50px 20px 50px;
+    opacity: 0;
+    animation-delay: calc(.1s * var(--i));
 }
 
-.c img {
+.skill-content > *:hover {
+    box-shadow: 0 0 5px #ededed, 0 0 15px #ededed, 0 0 25px #ededed;
+    transform: translateY(-20px);
+}
+
+.skill-content > * img {
     height: 200px;
-}
-
-.cpp {
-    /* height: 400px; */
-    width: 100%;
-    box-shadow: 0 0 15px rgba(240, 240, 240, 0.6);
-    border-radius: 50px;
-    padding: 50px 50px 20px 50px;
 }
 
 .cpp img {
@@ -252,20 +253,37 @@ body {
     margin: 0 0 30px 0;
 }
 
-.html {
-    /* height: 400px; */
-    width: 100%;
-    box-shadow: 0 0 15px rgba(240, 240, 240, 0.6);
-    border-radius: 50px;
-    padding: 50px 50px 20px 50px;
+.css img {
+    height: 180px;
+    margin: 0 0 30px 0;
 }
 
-.html img {
-    height: 200px;
+.skillContent {
+    animation: slideTop-50px 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+
+.contact-content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact-logos a {
+    color: #ffffff;
+    font-size: 32px;
+    /* height: 30px; */
+    /* width: 30px; */
 }
 
 .slideLeft {
     animation: slideLeft 1s ease forwards;
+}
+
+.slideLeft-50px {
+    animation: slideLeft-50px 1s ease forwards;
 }
 
 .slideRight {
@@ -274,6 +292,26 @@ body {
 
 .slideTop-50px {
     animation: slideTop-50px 1s ease forwards;
+}
+
+.slideTop {
+    animation: slideTop 1s ease forwards;
+}
+
+.slideBottom {
+    animation: slideBottom 1s ease forwards;
+}
+
+.slideBottom-50px {
+    animation: slideBottom 1s ease forwards;
+}
+
+.animationDelay--1s {
+    animation-delay: calc(.1s * var(--i));
+}
+
+.animationDelay--5s {
+    animation-delay: calc(.5s * var(--i));
 }
 
 @keyframes slideRight {
@@ -290,6 +328,17 @@ body {
 @keyframes slideLeft {
     0% {
         transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft-50px {
+    0% {
+        transform: translateX(50px);
         opacity: 0;
     }
     100% {
@@ -323,6 +372,17 @@ body {
 @keyframes slideTop-50px {
     0% {
         transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
         opacity: 0;
     }
     100% {
