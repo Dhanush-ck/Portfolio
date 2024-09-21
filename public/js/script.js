@@ -21,12 +21,12 @@ function reveal() {
                 reveals[i].classList.add('skillContent');
             }
         }
-        else {
-            reveals[i].classList.remove('slideTop-50px');
-            reveals[i].classList.remove('slideLeft-50px');
-            reveals[i].classList.remove('slideTop');
-            reveals[i].classList.remove('skillContent');
-        }
+        // else {
+        //     reveals[i].classList.remove('slideTop-50px');
+        //     reveals[i].classList.remove('slideLeft-50px');
+        //     reveals[i].classList.remove('slideTop');
+        //     reveals[i].classList.remove('skillContent');
+        // }
     }
 }
 
