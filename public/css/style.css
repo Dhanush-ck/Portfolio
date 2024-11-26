@@ -13,6 +13,7 @@ body {
     color: #ededed;
     background: #1e1e1e;
     width: 98.8vw;
+    overflow-x: hidden;
 }
 
 .header {
